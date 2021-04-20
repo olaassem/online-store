@@ -6,7 +6,7 @@ export default class ItemController extends Controller {
   @tracked color = this.model.colors[0].color;
 
   get productImage() {
-    return this.model.find(({ color }) => color === this.color).image;
+    return this.model.colors.find(({ color }) => color === this.color).image;
   }
 
   @action
