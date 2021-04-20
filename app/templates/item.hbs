@@ -2,6 +2,7 @@
     <div class="product item-details-page">
     <Product::Image @src={{this.productImage}}/>
     <Product::Details 
+      @colors={{this.model.colors}}
       @color={{this.color}}
       @onChangeColor={{this.onChangeColor}}
     />
