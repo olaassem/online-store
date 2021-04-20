@@ -1,7 +1,10 @@
 <PageContainer>
     <div class="product item-details-page">
-    <Product::Image />
-    <Product::Details @color={{this.color}}/>
+    <Product::Image @src={{this.productImage}}/>
+    <Product::Details 
+      @color={{this.color}}
+      @onChangeColor={{this.onChangeColor}}
+    />
   </div>
   <h5 class="mt-5">Features</h5>
   <ul>
