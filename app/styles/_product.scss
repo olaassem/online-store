@@ -71,6 +71,16 @@
     text-decoration: none;
     color: #333;
   }
+
+  &.is-zoomed {
+    .product-image {
+      width: 100%;
+    }
+    .product-details {
+      width: 0;
+      padding: 0;
+    }
+  }
 }
 
 .item-details-page {
