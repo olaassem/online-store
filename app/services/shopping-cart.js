@@ -12,4 +12,6 @@ export default class ShoppingCartService extends Service {
       name: '3',
     },
   ];
+
+  addItem(item) {}
 }
