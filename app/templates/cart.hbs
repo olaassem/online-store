@@ -9,6 +9,12 @@
       </li>
       <li class="breadcrumb-item" aria-current=page>Shopping Cart</li>
     </ol>
+
+    {{#each this.shoppingCart.itemList as |item|}}
+      <div class="d-flex align-items-center">
+        <h4>{{item.name}}</h4>
+      </div>
+    {{/each}}
   </nav>
 
   <div 
