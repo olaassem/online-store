@@ -12,7 +12,13 @@
 
     {{#each this.cart.itemList as |item|}}
       <div class="d-flex align-items-center">
-        <h4>{{item.name}}</h4>
+        <div class="cart-item-thumbnail">
+          <img src={{item.image}} alt={{item.name}}>
+        </div>
+        <div class="ml-3">
+          <h4>{{item.name}}</h4>
+          <i class="font-weight-bold">{{item.price}}</i>
+        </div>
       </div>
     {{/each}}
   </nav>
