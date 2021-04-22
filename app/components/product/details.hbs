@@ -1,7 +1,7 @@
   <div class="product-details">
     {{!-- Header --}}
     <section>
-      <h3>Beats Solo Wireless Headphones</h3>
+      <h3>{{@name}}</h3>
       <div class="text-warning">
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
@@ -13,8 +13,8 @@
 
     {{!-- Price --}}
     <section>
-      <del class="small text-black-50">$199.95</del>
-      <i class="text-danger font-weight-bold">$99.98</i>
+      <del class="small text-black-50">${{@price.original}}</del>
+      <i class="text-danger font-weight-bold">${{@price.original}}</i>
     </section>
 
     {{!-- Color --}}
