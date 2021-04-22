@@ -4,9 +4,9 @@
   aria-label="View your shopping cart"
 >
   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-  {{#if this.shoppingCart.itemList.length}}
+  {{#if this.cart.itemList.length}}
     <span class="cart-count d-inline-flex justify-content-center align-items-center">
-      {{this.shoppingCart.itemList.length}}
+      {{this.cart.itemList.length}}
     </span>
   {{/if}}
 </LinkTo>
