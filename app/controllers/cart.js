@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
 export default class CartController extends Controller {
-  @service shoppingCart;
+  @service('shopping-cart') cart;
 
   get subtotal() {
     return this.model.reduce((acc, item) => {
