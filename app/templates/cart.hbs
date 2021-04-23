@@ -11,13 +11,13 @@
     </ol>
 
     {{#each this.cart.itemList as |item|}}
-      <div class="d-flex align-items-center">
+      <div class="cart-item d-flex align-items-center">
         <div class="cart-item-thumbnail">
           <img src={{item.image}} alt={{item.name}}>
         </div>
         <div class="ml-3">
           <h4>{{item.name}}</h4>
-          <i class="font-weight-bold">{{item.price}}</i>
+          <i class="font-weight-bold">{{currency item.price}}</i>
         </div>
       </div>
     {{/each}}
